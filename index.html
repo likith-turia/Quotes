@@ -287,8 +287,8 @@
   }
 
   @page {
-    margin: 0.4cm 0.4cm;
-    size: A4;
+    margin: 0.5cm 0.5cm;
+    size: A4 portrait;
   }
 
   @media print {
@@ -298,13 +298,14 @@
       color-adjust: exact !important;
     }
 
-    .controls { display: none !important; }
-    .print-tip-bar { display: none !important; }
+    .controls, .print-tip-bar { display: none !important; }
 
     body {
       background: white;
       margin: 0;
       padding: 0;
+      font-size: 12px;
+      -webkit-text-size-adjust: none;
     }
 
     .page {
@@ -320,7 +321,81 @@
     }
 
     .plan-card.growth { box-shadow: none; }
+
+    /* Header */
+    .q-header { padding: 14px 20px 12px; }
+    .q-brand-logo { height: 24px; }
+    .q-brand-sub { font-size: 10px; }
+    .q-date { font-size: 10px; }
+
+    /* To bar */
+    .q-to { padding: 10px 20px; gap: 28px; }
+    .q-to-lbl { font-size: 9px; }
+    .q-to-val { font-size: 12px; }
+    .q-to-sub { font-size: 10px; }
+
+    /* Body */
+    .q-body { padding: 14px 20px; }
+    .q-section-lbl { font-size: 9px; margin-bottom: 10px; }
+
+    /* Plan cards */
+    .plans-row { gap: 10px; margin-bottom: 10px; }
+
+    .plan-head { padding: 10px 14px 8px; }
+    .plan-badge { font-size: 9px; padding: 2px 7px; margin-bottom: 4px; }
+    .plan-name { font-size: 15px; }
+    .plan-tagline { font-size: 10px; }
+
+    /* Billing cols */
+    .billing-opt { padding: 10px 12px; }
+    .bill-type { font-size: 9px; }
+    .bill-type-row { margin-bottom: 7px; }
+    .rec-tag { font-size: 8px; padding: 1px 5px; }
+
+    .p-sym { font-size: 12px; top: -3px; }
+    .p-num { font-size: 22px; }
+    .p-cross { font-size: 10px; }
+    .p-sub { font-size: 10px; margin-bottom: 8px; }
+
+    .mini-table { gap: 4px; }
+    .mrow { font-size: 11px; }
+    .mrow.tot .ml { font-size: 11px; }
+    .mrow.tot .mr { font-size: 12px; }
+    .mdiv { margin: 2px 0; }
+
+    .save-pill { font-size: 9px; padding: 2px 7px; margin-top: 5px; }
+
+    /* Features */
+    .plan-feats { padding: 10px 14px; }
+    .feats-lbl { font-size: 9px; margin-bottom: 5px; }
+    .feats-cols { gap: 3px 10px; }
+    .feats-cols li { font-size: 10.5px; }
+    .fc { width: 12px; height: 12px; font-size: 7px; }
+
+    /* Notice */
+    .notice { margin-bottom: 10px; }
+    .notice-top { padding: 8px 16px; }
+    .notice-badge { font-size: 9px; }
+    .notice-title { font-size: 12px; }
+    .notice-sub { font-size: 10px; }
+    .notice-price { font-size: 16px; }
+    .notice-credits { font-size: 10px; }
+    .notice-body { padding: 7px 16px; gap: 10px; }
+    .nf { font-size: 10px; }
+
+    /* Trial */
+    .trial { padding: 8px 14px; gap: 8px; margin-bottom: 0; }
+    .trial-icon { width: 22px; height: 22px; font-size: 11px; }
+    .trial-title { font-size: 11px; }
+    .trial-sub { font-size: 10px; }
+
+    /* Footer */
+    .q-footer { padding: 10px 20px; gap: 6px; }
+    .qf-lbl { font-size: 9px; }
+    .qf-val { font-size: 11px; }
+    .qf-brand { font-size: 11px; }
   }
+
 </style>
 </head>
 <body>
